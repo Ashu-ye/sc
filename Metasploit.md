@@ -44,4 +44,4 @@ exploit
 
 ### Now go to that location where the .elf file is present and 
 
-``python3 -m http.server --bind your_ip port_no```
+```python3 -m http.server --bind your_ip port_no```

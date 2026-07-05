@@ -54,7 +54,8 @@ Execute these terminal commands on your host/developer machine to download the s
 mkdir -p ~/sonar && cd ~/sonar
 
 # 2. Download your application source code (Replace with your actual link)
-wget Your_code_link
+git clone https://github.com/Commando-X/vuln-bank.git
+cd vuln-bank
 
 # 3. Download the specific Sonar Scanner binary bundle
 wget https://sonarsource.com

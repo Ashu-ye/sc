@@ -13,6 +13,13 @@ docker run -d --name sonarqube-custom --restart unless-stopped -p 9000:9000 sona
 
 ---
 
+## To remove sonarcupe if it already prensent 
+```
+sudo docker rm -f sonarqube-custom
+
+sudo docker rmi sonarqube:community
+```
+---
 ## Step 2: Initialize the Dashboard & Create Project
 1. Open your browser and navigate to `http://localhost:9000` (or `http://your-server-ip:9000`).
 2. Log in using the default administrative credentials:
